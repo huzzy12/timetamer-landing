@@ -35,18 +35,18 @@ export default function Home() {
         animate="visible"
         variants={fadeIn}
       >
-        <h1 className="text-4xl font-bold text-[#FF6B35]">TimeTamer</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#FF6B35]">TimeTamer</h1>
       </motion.header>
 
       {/* Hero Section */}
       <motion.section 
-        className="px-4 py-12 text-center"
+        className="px-4 py-8 sm:py-12 text-center"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
         <motion.h2 
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -54,7 +54,7 @@ export default function Home() {
           You Think You're Productive.<br />But Are You Really?
         </motion.h2>
         <motion.p 
-          className="text-xl mb-8"
+          className="text-lg sm:text-xl mb-6 sm:mb-8"
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5 }}
@@ -63,7 +63,7 @@ export default function Home() {
         </motion.p>
         <Link href="https://timetamer.created.app/account/signup?callbackUrl=/">
           <motion.button 
-            className="bg-[#FF6B35] text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-opacity-90 transition duration-300"
+            className="bg-[#FF6B35] text-white font-bold py-3 px-6 sm:px-8 rounded-full text-lg sm:text-xl hover:bg-opacity-90 transition duration-300"
             whileHover={buttonHover}
             whileTap={{ scale: 0.95 }}
           >
@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* Testimonial Section */}
       <motion.section 
-        className="px-4 py-8 flex justify-center"
+        className="px-4 py-6 sm:py-8 flex justify-center"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -97,7 +97,7 @@ export default function Home() {
 
       {/* Main Content */}
       <motion.section 
-        className="px-4 py-8 max-w-2xl mx-auto"
+        className="px-4 py-6 sm:py-8 max-w-2xl mx-auto"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -105,8 +105,8 @@ export default function Home() {
         <p className="mb-4">You're constantly busy. Your to-do list never ends. You're always racing against the clock.</p>
         <p className="mb-4">And yet, somehow, you never seem to get ahead. Sound familiar?</p>
         <p className="mb-4">Here's the truth: Being busy isn't the same as being productive.</p>
-        <p className="mb-8">You've tried it all:</p>
-        <ul className="list-disc list-inside mb-8">
+        <p className="mb-6">You've tried it all:</p>
+        <ul className="list-disc list-inside mb-6">
           <li>Time blocking</li>
           <li>To-do list apps</li>
           <li>Pomodoro technique</li>
@@ -114,31 +114,31 @@ export default function Home() {
         </ul>
         <p className="mb-4">But nothing sticks. You're still overwhelmed, still behind, still stressed.</p>
         <p className="mb-4">Why? Because you're treating the symptoms, not the cause.</p>
-        <p className="mb-8">The real problem isn't that you need to work harder or faster. It's that you don't truly understand where your time is going.</p>
-        <h3 className="text-2xl font-bold mb-4">Think about it:</h3>
-        <ul className="list-disc list-inside mb-8">
+        <p className="mb-6">The real problem isn't that you need to work harder or faster. It's that you don't truly understand where your time is going.</p>
+        <h3 className="text-xl sm:text-2xl font-bold mb-4">Think about it:</h3>
+        <ul className="list-disc list-inside mb-6">
           <li>Do you know exactly how many hours you spent in meetings last week?</li>
           <li>Can you pinpoint how much time you wasted on social media?</li>
           <li>Do you realize how many hours slip away on "quick" tasks that aren't really priorities?</li>
         </ul>
         <p className="mb-4">If you're like most of us, the answer is NO.</p>
-        <p className="mb-8">And that's the root cause of your productivity problem.</p>
-        <p className="text-2xl font-bold mb-4">You can't optimize what you can't measure.</p>
+        <p className="mb-6">And that's the root cause of your productivity problem.</p>
+        <p className="text-xl sm:text-2xl font-bold mb-4">You can't optimize what you can't measure.</p>
         <p className="mb-4">All those productivity techniques you've tried? They're built on guesswork.</p>
         <p className="mb-4">You're trying to fix a problem you can't even see.</p>
-        <p className="mb-8">It's like trying to lose weight without ever stepping on a scale or tracking what you eat.</p>
-        <h3 className="text-4xl font-bold mb-4">Introducing TimeTamer: Your AI-Powered Time Auditor</h3>
-        <p className="mb-8">TimeTamer doesn't just help you manage your time. It reveals where your time is actually going.</p>
+        <p className="mb-6">It's like trying to lose weight without ever stepping on a scale or tracking what you eat.</p>
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Introducing TimeTamer: Your AI-Powered Time Auditor</h3>
+        <p className="mb-6">TimeTamer doesn't just help you manage your time. It reveals where your time is actually going.</p>
       </motion.section>
 
       {/* Video Section */}
       <motion.section 
-        className="px-4 py-8 bg-[#1A2A40]"
+        className="px-4 py-6 sm:py-8 bg-[#1A2A40]"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
-        <h3 className="text-3xl font-bold mb-8 text-center">See TimeTamer in Action:</h3>
+        <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">See TimeTamer in Action:</h3>
         <div className="max-w-4xl mx-auto bg-[#1A2A40] p-4 rounded-lg">
           {isClient && (
             <video 
@@ -158,12 +158,12 @@ export default function Home() {
 
       {/* Features Section */}
       <motion.section 
-        className="px-28 py-2 bg-[#1A2A40]"
+        className="px-4 sm:px-8 md:px-16 lg:px-28 py-6 sm:py-8 bg-[#1A2A40]"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
-        <h3 className="text-4xl font-bold mb-8 text-center">Here's how TimeTamer fixes the root cause:</h3>
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center">Here's how TimeTamer fixes the root cause:</h3>
         <div className="max-w-4xl mx-auto">
           <ol className="list-decimal list-inside space-y-4">
             <li><strong>Visualize Your Week:</strong> Get a clear, hour-by-hour breakdown of your entire week. No more guessing.</li>
@@ -178,17 +178,17 @@ export default function Home() {
 
       {/* Results Section */}
       <motion.section 
-        className="px-28 py-6 bg-[#1A2A40]"
+        className="px-4 sm:px-8 md:px-16 lg:px-28 py-6 sm:py-8 bg-[#1A2A40]"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
-        <h3 className="text-3xl font-bold mb-8 text-center">The Result? True Productivity Breakthrough</h3>
+        <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">The Result? True Productivity Breakthrough</h3>
         <div className="max-w-4xl mx-auto">
           <p className="mb-4">Imagine saving 10 hours every week.</p>
-          <p className="mb-8">At just $20/hour, that's $9,600 a year. (And let's be honest, your time is worth way more.)</p>
+          <p className="mb-6">At just $20/hour, that's $9,600 a year. (And let's be honest, your time is worth way more.)</p>
           <p className="mb-4">But it's not just about the money. It's about:</p>
-          <ul className="list-disc list-inside mb-8">
+          <ul className="list-disc list-inside mb-6">
             <li>Finally having time for that side project you've been dreaming about</li>
             <li>Being present with your family without the constant hum of work stress</li>
             <li>Achieving your goals without burning out</li>
@@ -198,30 +198,30 @@ export default function Home() {
 
       {/* CTA Section */}
       <motion.section 
-        className="px-4 py-2 text-center bg-[#1A2A40]"
+        className="px-4 py-6 sm:py-8 text-center bg-[#1A2A40]"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
       >
-        <h3 className="text-3xl font-bold mb-8">Ready to uncover where your time really goes?</h3>
+        <h3 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Ready to uncover where your time really goes?</h3>
 
         <Link href="https://timetamer.created.app/account/signup?callbackUrl=/">
           <motion.button 
-            className="bg-[#FF6B35] text-white font-bold py-4 px-8 rounded-full text-xl hover:bg-opacity-90 transition duration-300"
+            className="bg-[#FF6B35] text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl hover:bg-opacity-90 transition duration-300"
             whileHover={buttonHover}
             whileTap={{ scale: 0.95 }}
           >
             START FOR FREE!
           </motion.button>
         </Link>
-        <p className="mt-8 max-w-2xl mx-auto">
+        <p className="mt-6 sm:mt-8 max-w-2xl mx-auto text-sm sm:text-base">
           P.S. TimeTamer is currently FREE. But with feature requests flooding in, a premium version isn't far off. Don't miss your chance to get in on the ground floor and start printing money with your reclaimed time.
         </p>
       </motion.section>
 
       {/* Footer */}
       <motion.footer 
-        className="px-4 py-8 text-center bg-[#1A2A40]"
+        className="px-4 py-6 sm:py-8 text-center bg-[#1A2A40]"
         initial="hidden"
         animate="visible"
         variants={fadeIn}
@@ -230,14 +230,14 @@ export default function Home() {
           <Image
             src="/founder-image.jpg"
             alt="M. Huzaifa Madni"
-            width={100}
-            height={100}
+            width={80}
+            height={80}
             className="rounded-full mx-auto mb-2"
           />
           <p className="font-bold">M. Huzaifa Madni</p>
           <p>Founder @TimeTamer</p>
         </div>
-        <p>Contact: huzaifainfluences@gmail.com</p>
+        <p className="text-sm">Contact: huzaifainfluences@gmail.com</p>
       </motion.footer>
     </div>
   )
